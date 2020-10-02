@@ -1,0 +1,45 @@
+/* REGOLE GENERALI */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center{
+  padding: 50px 5% 0;
+}
+/* debug */
+[class*="col-"]{
+  height: 100px;
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+/* debug */
+
+/* REGOLE HEADER */
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10%;
+  z-index: 100;
+}
+#jumbo{
+  margin-top: 100px;
+}
+
+/* regole main */
+.work{
+  margin-top: 50px;
+}
+.social{
+  margin-top: 50px;
+}
+
+
+/* footer */
+footer{
+  background-color: red;
+  margin-top: 50px;
+  padding: 0 10%;
+}
