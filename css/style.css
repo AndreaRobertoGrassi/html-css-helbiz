@@ -9,7 +9,7 @@
 }
 /* debug */
 [class*="col-"]{
-  height: auto;
+  /* height: auto; */
   /* border: 1px solid black; */
 }
 /* debug */
@@ -42,7 +42,7 @@ nav{
 #menu li, #lingue li{
   list-style: none;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 #menu a, #lingue a{
   text-decoration: none;
@@ -61,14 +61,14 @@ nav{
 
 /* REGOLE MAIN */
 
-/* sezione products */
+/* SEZIONE PRODUCTS */
 .products .row .text{
   background-color: #fafafa;
   height: 100%;
   text-align: center;
   padding: 40px 0;
 }
-.products .row h2,h3,a{
+.products .row .text>a,h2,h3{
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 20px;
@@ -98,13 +98,42 @@ nav{
   padding-left: 20px;
 }
 
-
-
-
-
+/* SEZIONE WORK */
 .work{
   margin-top: 50px;
 }
+.work .row.background {
+  background-image: url('../img/anziano.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+#iphone{
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.work .margin{
+  margin-top: 100px;
+}
+.work .text-work{
+  font-size: 40px;
+}
+.work .text-step{
+  margin-top: 30px;
+}
+.work .text-step span{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+/* SEZIONE SMART MOBILITY */
+
 .social{
   margin-top: 50px;
 }
