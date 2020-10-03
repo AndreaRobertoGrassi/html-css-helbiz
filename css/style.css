@@ -9,7 +9,7 @@
 }
 /* debug */
 [class*="col-"]{
-  /* height: 100px; */
+  height: auto;
   /* border: 1px solid black; */
 }
 /* debug */
@@ -59,11 +59,43 @@ nav{
 }
 
 
-/* regole main */
+/* REGOLE MAIN */
 
-.products .row  div{
-  height: 300px;
-  border: 1px solid black;
+/* sezione products */
+.products .row .text{
+  background-color: #fafafa;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+.products .row h2,h3,a{
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+}
+.products .row h2{
+  font-size: 30px;
+}
+.products .row img{
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* box monopattino */
+.products .row>div{
+  height: 550px;
+  text-align: center;
+}
+.products .row .padding-right{
+  padding-right: 20px;
+}
+
+/* box bike */
+.products .row .padding-left{
+  padding-left: 20px;
 }
 
 
