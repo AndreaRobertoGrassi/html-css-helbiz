@@ -7,6 +7,12 @@
 .center{
   padding: 50px 5% 0;
 }
+.padding-right{
+  padding-right: 20px;
+}
+.padding-left{
+  padding-left: 20px;
+}
 /* debug */
 [class*="col-"]{
   /* height: auto; */
@@ -68,7 +74,7 @@ nav{
   text-align: center;
   padding: 40px 0;
 }
-.products .row .text>a,h2,h3{
+.products .row .text a,h2,h3{
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 20px;
@@ -88,14 +94,6 @@ nav{
 .products .row>div{
   height: 550px;
   text-align: center;
-}
-.products .row .padding-right{
-  padding-right: 20px;
-}
-
-/* box bike */
-.products .row .padding-left{
-  padding-left: 20px;
 }
 
 /* SEZIONE WORK */
@@ -132,14 +130,97 @@ nav{
 }
 
 
-/* SEZIONE SMART MOBILITY */
+/* SEZIONE MOBILITY */
 
+/* prima col */
+.mobility .row>div:first-child{
+  background-image: url('../img/scooter-background.jpg');
+  background-size: cover;
+  height: 500px;
+}
+/* seconda col */
+.mobility .background-mobility-first{
+  background: linear-gradient(180deg, rgba(54,89,130,1) 0%, rgba(60,64,69,1) 100%);
+  height: 400px;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  font-size: 20px;
+  overflow:hidden;
+}
+.mobility h2{
+  font-size: 30px;
+}
+#mappa{
+  width: 40%;
+  height: auto;
+  margin-top: 100px;
+}
+.ios-android{
+  margin-top: 20px;
+}
+.ios-android a{
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* terza col */
+.mobility .background-mobility-second{
+  margin-top: 50px;
+  background-image:url('../img/firenze.jpg');
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  overflow:hidden;
+}
+.layover{
+  background-color: rgba(59, 55, 55, 0.6);
+  height: 100%;
+  padding-top: 50px;
+}
+
+/* SEZIONE SOCIAL */
 .social{
   margin-top: 50px;
 }
+.social .row>div{
+  background-image: url('../img/collage.jpg');
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.social .helbiz-family{
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  margin: 125px auto;
+  text-align: center;
+  position: relative;
+}
+.text-helbiz-family{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-helbiz-family>h2{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+#social-icons li{
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+}
+#social-icons>li>a{
+  color: black;
+}
 
-
-/* footer */
+/* FOOTER */
 footer{
   background-color: red;
   margin-top: 50px;
