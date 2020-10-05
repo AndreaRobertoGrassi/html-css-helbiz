@@ -7,6 +7,9 @@
 .container-full-width{
   font-family: 'Roboto', sans-serif;
 }
+#menu-hamburgher{
+  display: none;
+}
 .center{
   padding: 50px 5% 0;
 }
@@ -148,8 +151,6 @@ nav .row>div:first-child{
   display: block;
   margin: auto;
 }
-
-/* box monopattino */
 .products .row>div{
   height: 550px;
   text-align: center;
@@ -166,7 +167,7 @@ nav .row>div:first-child{
   position: relative;
 }
 #iphone{
-  width: 150px;
+  width: 180px;
   height: auto;
   position: absolute;
   top: 60%;
@@ -195,6 +196,7 @@ nav .row>div:first-child{
   background-size: cover;
   height: 500px;
   position: relative;
+  margin-top: 60px;
 }
 .text-mobility{
   position: absolute;
@@ -218,7 +220,7 @@ nav .row>div:first-child{
 /* seconda col */
 .mobility .background-mobility-first{
   background: linear-gradient(180deg, rgba(54,89,130,1) 0%, rgba(60,64,69,1) 100%);
-  height: 400px;
+  height: 500px;
   margin-top: 50px;
   text-align: center;
   padding-top: 50px;
@@ -343,8 +345,7 @@ footer .row:last-child div{
 }
 
 
-
-
+/* VERSIONE TABLET */
 @media all and (min-width: 769px) and (max-width: 992px){
   /* REGOLE GENERALI */
   .apple, .google{
@@ -352,7 +353,9 @@ footer .row:last-child div{
     height: 50px;
     margin: 0 10px;
   }
-
+  #menu-hamburgher{
+    display: none;
+  }
   /* HEADER */
   nav{
     padding: 0 2%;
@@ -378,12 +381,9 @@ footer .row:last-child div{
   }
 
   /* SEZIONE WORK */
-  .work .row:first-child div {
-    height: 200px;
-  }
   #iphone{
-    width: 120px;
-    top: 40%;
+    width: 130px;
+    top: 70%;
   }
   .work .text-work{
     font-size: 20px;
@@ -401,6 +401,7 @@ footer .row:last-child div{
   /* prima col */
   .mobility .row>div:first-child{
     height: 250px;
+    margin-top: 30px;
   }
   .text-mobility h1{
     font-size: 30px;
@@ -468,5 +469,186 @@ footer .row:last-child div{
   .text-footer{
     font-size: 12px;
   }
-  
+
+}
+
+
+
+
+
+/* VERSIONE SMARTPHONE */
+@media all and (max-width: 768px){
+  /* REGOLE GENERALI */
+  .apple, .google{
+    width: 30%;
+    height: 40px;
+    margin: 0 10px;
+  }
+  #menu-hamburgher{
+    display: inline-block;
+    line-height: 50px;
+  }
+  .padding-right{
+    padding-right: 0;
+  }
+  .padding-left{
+    padding-left: 0;
+  }
+  /* HEADER */
+  nav{
+    padding: 0 5%;
+  }
+  .text-right{
+    text-align: right;
+  }
+  #menu, #lingue{
+    display: none;
+  }
+  /* MAIN */
+  /* SEZIONE PRODUCTS */
+  .products .row .text{
+    height: 70%;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .products .row .text a,h2,h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .products .row h2{
+    font-size: 20px;
+  }
+  .products .row img{
+    width: 30%;
+  }
+
+  /* box monopattino */
+  .products .row>div{
+    height: auto;
+    margin: 20px;
+  }
+
+  /* SEZIONE WORK */
+  .work .row:first-child div {
+    height: 200px;
+  }
+  .work .margin{
+    margin-top: 50px;
+  }
+  #iphone{
+    width: 120px;
+    top: 40%;
+  }
+  .work .text-work{
+    font-size: 20px;
+  }
+  .work .text-step{
+    margin-top: 5px;
+  }
+  .work .text-step span{
+    font-size: 9px;
+    margin-top: 7px;
+  }
+
+
+  /* SEZIONE MOBILITY */
+  /* prima col */
+  .mobility .row>div:first-child{
+    height: 250px;
+    margin-top: 30px;
+  }
+  .text-mobility h1{
+    font-size: 30px;
+  }
+  .text-mobility{
+    font-size: 14px;
+  }
+  /* seconda col */
+  .mobility .background-mobility-first{
+    height: 300px;
+    font-size: 15px;
+  }
+  .mobility h2{
+    font-size: 20px;
+  }
+  #mappa{
+    margin-top: 50px;
+  }
+  /* terza col */
+  .mobility .background-mobility-second{
+    height: 300px;
+    font-size: 15px;
+  }
+
+  /* SEZIONE SOCIAL */
+  .social .row>div{
+    height: 250px;
+  }
+  .social .helbiz-family{
+    width: 220px;
+    height: 100px;
+    margin: 75px auto;
+  }
+  .text-helbiz-family{
+    min-width: 90%;
+  }
+  .text-helbiz-family>h2{
+    font-size: 25px;
+  }
+  #social-icons li{
+    font-size: 15px;
+  }
+
+
+  /* FOOTER */
+  .smartphone{
+    display: inline-block;
+  }
+  footer{
+    margin-top: 50px;
+    padding: 50px 10% 20px 8%;
+  }
+  footer li{
+    margin-bottom: 20px;
+  }
+  #logo-white{
+    width: 30%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  footer .row:first-child{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #909090;
+  }
+  footer .row:nth-child(2){
+    line-height: 80px;
+    height: 80px;
+    border-bottom: 1px solid #909090;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #social-icons-footer {
+    height: 80px;
+  }
+  #social-icons-footer li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  #social-icons-footer a{
+    color: white;
+  }
+  .text-footer{
+    font-size: 14px;
+  }
+  footer .row:last-child div{
+    padding-top: 10px;
+    border-top: 1px solid #909090;
+    text-align: center;
+  }
+  .smartphone{
+    width: 20%;
+    height: 40px;
+  }
+
 }
